@@ -1,0 +1,5 @@
+jupyter
+networkx
+pygraphviz
+git+https://github.com/opencobra/cobrapy.git@devel#egg=cobra
+cameo

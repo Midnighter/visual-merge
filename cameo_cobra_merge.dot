@@ -1,0 +1,831 @@
+strict graph "Merge Overview" {
+	graph [rankdir=LR];
+	node [label="\N"];
+	subgraph cluster_cameo {
+		graph [color=black,
+			label=cameo
+		];
+		cameo		 [fillcolor=lightgrey,
+			label=cameo,
+			shape=folder,
+			style=filled];
+		cameo_network_analysis		 [fillcolor=lightgrey,
+			label=network_analysis,
+			shape=folder,
+			style=filled];
+		cameo -- cameo_network_analysis;
+		cameo_models		 [fillcolor=lightgrey,
+			label=models,
+			shape=folder,
+			style=filled];
+		cameo -- cameo_models;
+		cameo_api		 [fillcolor=lightgrey,
+			label=api,
+			shape=folder,
+			style=filled];
+		cameo -- cameo_api;
+		cameo_visualization		 [fillcolor=lightgrey,
+			label=visualization,
+			shape=folder,
+			style=filled];
+		cameo -- cameo_visualization;
+		cameo_stuff		 [fillcolor=lightgrey,
+			label=stuff,
+			shape=folder,
+			style=filled];
+		cameo -- cameo_stuff;
+		cameo_strain_design		 [fillcolor=lightgrey,
+			label=strain_design,
+			shape=folder,
+			style=filled];
+		cameo -- cameo_strain_design;
+		cameo_data		 [fillcolor=lightgrey,
+			label=data,
+			shape=folder,
+			style=filled];
+		cameo -- cameo_data;
+		cameo_core		 [fillcolor=lightgrey,
+			label=core,
+			shape=folder,
+			style=filled];
+		cameo -- cameo_core;
+		cameo_flux_analysis		 [fillcolor=lightgrey,
+			label=flux_analysis,
+			shape=folder,
+			style=filled];
+		cameo -- cameo_flux_analysis;
+		cameo_ui		 [fillcolor=lightgrey,
+			label=ui,
+			shape=folder,
+			style=filled];
+		cameo -- cameo_ui;
+		cameo_network_analysis_distance_based_on_molecular_formula		 [label=distance_based_on_molecular_formula,
+			shape=plaintext];
+		cameo_network_analysis -- cameo_network_analysis_distance_based_on_molecular_formula;
+		cameo_network_analysis_model_to_network		 [label=model_to_network,
+			shape=plaintext];
+		cameo_network_analysis -- cameo_network_analysis_model_to_network;
+		cameo_network_analysis_networkx_based		 [fillcolor=lightgrey,
+			label=networkx_based,
+			shape=folder,
+			style=filled];
+		cameo_network_analysis -- cameo_network_analysis_networkx_based;
+		cameo_network_analysis_reactions_to_network		 [label=reactions_to_network,
+			shape=plaintext];
+		cameo_network_analysis -- cameo_network_analysis_reactions_to_network;
+		cameo_network_analysis_remove_highly_connected_nodes		 [label=remove_highly_connected_nodes,
+			shape=plaintext];
+		cameo_network_analysis -- cameo_network_analysis_remove_highly_connected_nodes;
+		cameo_network_analysis_util		 [fillcolor=lightgrey,
+			label=util,
+			shape=folder,
+			style=filled];
+		cameo_network_analysis -- cameo_network_analysis_util;
+		cameo_models_index_models_bigg		 [label=index_models_bigg,
+			shape=plaintext];
+		cameo_models -- cameo_models_index_models_bigg;
+		cameo_models_index_models_minho		 [label=index_models_minho,
+			shape=plaintext];
+		cameo_models -- cameo_models_index_models_minho;
+		cameo_models_webmodels		 [fillcolor=lightgrey,
+			label=webmodels,
+			shape=folder,
+			style=filled];
+		cameo_models -- cameo_models_webmodels;
+		cameo_api_designer		 [fillcolor=lightgrey,
+			label=designer,
+			shape=folder,
+			style=filled];
+		cameo_api -- cameo_api_designer;
+		cameo_api_logging		 [fillcolor=lightgrey,
+			label=logging,
+			shape=folder,
+			style=filled];
+		cameo_api -- cameo_api_logging;
+		cameo_visualization_draw_knockout_result		 [label=draw_knockout_result,
+			shape=plaintext];
+		cameo_visualization -- cameo_visualization_draw_knockout_result;
+		cameo_visualization_escher_ext		 [fillcolor=lightgrey,
+			label=escher_ext,
+			shape=folder,
+			style=filled];
+		cameo_visualization -- cameo_visualization_escher_ext;
+		cameo_visualization_graph_to_svg		 [label=graph_to_svg,
+			shape=plaintext];
+		cameo_visualization -- cameo_visualization_graph_to_svg;
+		cameo_visualization_inchi_to_svg		 [label=inchi_to_svg,
+			shape=plaintext];
+		cameo_visualization -- cameo_visualization_inchi_to_svg;
+		cameo_visualization_palette		 [fillcolor=lightgrey,
+			label=palette,
+			shape=folder,
+			style=filled];
+		cameo_visualization -- cameo_visualization_palette;
+		cameo_visualization_plotting		 [fillcolor=lightgrey,
+			label=plotting,
+			shape=folder,
+			style=filled];
+		cameo_visualization -- cameo_visualization_plotting;
+		cameo_visualization_visualization		 [fillcolor=lightgrey,
+			label=visualization,
+			shape=folder,
+			style=filled];
+		cameo_visualization -- cameo_visualization_visualization;
+		cameo_visualization_plotting_AbstractPlotter		 [label=AbstractPlotter,
+			shape=note];
+		cameo_visualization_plotting -- cameo_visualization_plotting_AbstractPlotter;
+		cameo_visualization_plotting_abstract		 [fillcolor=lightgrey,
+			label=abstract,
+			shape=folder,
+			style=filled];
+		cameo_visualization_plotting -- cameo_visualization_plotting_abstract;
+		cameo_visualization_plotting_six		 [fillcolor=lightgrey,
+			label=six,
+			shape=folder,
+			style=filled];
+		cameo_visualization_plotting -- cameo_visualization_plotting_six;
+		cameo_strain_design_DifferentialFVA		 [label=DifferentialFVA,
+			shape=note];
+		cameo_strain_design -- cameo_strain_design_DifferentialFVA;
+		cameo_strain_design_FSEOF		 [label=FSEOF,
+			shape=note];
+		cameo_strain_design -- cameo_strain_design_FSEOF;
+		cameo_strain_design_OptGene		 [label=OptGene,
+			shape=note];
+		cameo_strain_design -- cameo_strain_design_OptGene;
+		cameo_strain_design_OptKnock		 [label=OptKnock,
+			shape=note];
+		cameo_strain_design -- cameo_strain_design_OptKnock;
+		cameo_strain_design_deterministic		 [fillcolor=lightgrey,
+			label=deterministic,
+			shape=folder,
+			style=filled];
+		cameo_strain_design -- cameo_strain_design_deterministic;
+		cameo_strain_design_heuristic		 [fillcolor=lightgrey,
+			label=heuristic,
+			shape=folder,
+			style=filled];
+		cameo_strain_design -- cameo_strain_design_heuristic;
+		cameo_strain_design_pathway_prediction		 [fillcolor=lightgrey,
+			label=pathway_prediction,
+			shape=folder,
+			style=filled];
+		cameo_strain_design -- cameo_strain_design_pathway_prediction;
+		cameo_strain_design_strain_design		 [fillcolor=lightgrey,
+			label=strain_design,
+			shape=folder,
+			style=filled];
+		cameo_strain_design -- cameo_strain_design_strain_design;
+		cameo_strain_design_deterministic_DifferentialFVA		 [label=DifferentialFVA,
+			shape=note];
+		cameo_strain_design_deterministic -- cameo_strain_design_deterministic_DifferentialFVA;
+		cameo_strain_design_deterministic_FSEOF		 [label=FSEOF,
+			shape=note];
+		cameo_strain_design_deterministic -- cameo_strain_design_deterministic_FSEOF;
+		cameo_strain_design_deterministic_OptKnock		 [label=OptKnock,
+			shape=note];
+		cameo_strain_design_deterministic -- cameo_strain_design_deterministic_OptKnock;
+		cameo_strain_design_deterministic_flux_variability_based		 [fillcolor=lightgrey,
+			label=flux_variability_based,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_deterministic -- cameo_strain_design_deterministic_flux_variability_based;
+		cameo_strain_design_deterministic_linear_programming		 [fillcolor=lightgrey,
+			label=linear_programming,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_deterministic -- cameo_strain_design_deterministic_linear_programming;
+		cameo_strain_design_heuristic_OptGene		 [label=OptGene,
+			shape=note];
+		cameo_strain_design_heuristic -- cameo_strain_design_heuristic_OptGene;
+		cameo_strain_design_heuristic_evolutionary		 [fillcolor=lightgrey,
+			label=evolutionary,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic -- cameo_strain_design_heuristic_evolutionary;
+		cameo_strain_design_heuristic_evolutionary_based		 [fillcolor=lightgrey,
+			label=evolutionary_based,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic -- cameo_strain_design_heuristic_evolutionary_based;
+		cameo_strain_design_pathway_prediction_PathwayPredictor		 [label=PathwayPredictor,
+			shape=note];
+		cameo_strain_design_pathway_prediction -- cameo_strain_design_pathway_prediction_PathwayPredictor;
+		cameo_strain_design_pathway_prediction_create_adapter_reactions		 [label=create_adapter_reactions,
+			shape=plaintext];
+		cameo_strain_design_pathway_prediction -- cameo_strain_design_pathway_prediction_create_adapter_reactions;
+		cameo_strain_design_pathway_prediction_display_pathway		 [label=display_pathway,
+			shape=plaintext];
+		cameo_strain_design_pathway_prediction -- cameo_strain_design_pathway_prediction_display_pathway;
+		cameo_strain_design_pathway_prediction_pathway_predictor		 [fillcolor=lightgrey,
+			label=pathway_predictor,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_pathway_prediction -- cameo_strain_design_pathway_prediction_pathway_predictor;
+		cameo_strain_design_pathway_prediction_util		 [fillcolor=lightgrey,
+			label=util,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_pathway_prediction -- cameo_strain_design_pathway_prediction_util;
+		cameo_data_metanetx		 [fillcolor=lightgrey,
+			label=metanetx,
+			shape=folder,
+			style=filled];
+		cameo_data -- cameo_data_metanetx;
+		cameo_core_Gene		 [label=Gene,
+			shape=note];
+		cameo_core -- cameo_core_Gene;
+		cameo_core_Metabolite		 [label=Metabolite,
+			shape=note];
+		cameo_core -- cameo_core_Metabolite;
+		cameo_core_SolverBasedModel		 [label=SolverBasedModel,
+			shape=note];
+		cameo_core -- cameo_core_SolverBasedModel;
+		cameo_core_gene		 [fillcolor=lightgrey,
+			label=gene,
+			shape=folder,
+			style=filled];
+		cameo_core -- cameo_core_gene;
+		cameo_core_metabolite		 [fillcolor=lightgrey,
+			label=metabolite,
+			shape=folder,
+			style=filled];
+		cameo_core -- cameo_core_metabolite;
+		cameo_core_pathway		 [fillcolor=lightgrey,
+			label=pathway,
+			shape=folder,
+			style=filled];
+		cameo_core -- cameo_core_pathway;
+		cameo_core_reaction		 [fillcolor=lightgrey,
+			label=reaction,
+			shape=folder,
+			style=filled];
+		cameo_core -- cameo_core_reaction;
+		cameo_core_result		 [fillcolor=lightgrey,
+			label=result,
+			shape=folder,
+			style=filled];
+		cameo_core -- cameo_core_result;
+		cameo_core_solution		 [fillcolor=lightgrey,
+			label=solution,
+			shape=folder,
+			style=filled];
+		cameo_core -- cameo_core_solution;
+		cameo_core_solver_based_model		 [fillcolor=lightgrey,
+			label=solver_based_model,
+			shape=folder,
+			style=filled];
+		cameo_core -- cameo_core_solver_based_model;
+		cameo_core_solver_based_model_dual		 [fillcolor=lightgrey,
+			label=solver_based_model_dual,
+			shape=folder,
+			style=filled];
+		cameo_core -- cameo_core_solver_based_model_dual;
+		cameo_core_to_solver_based_model		 [label=to_solver_based_model,
+			shape=plaintext];
+		cameo_core -- cameo_core_to_solver_based_model;
+		cameo_flux_analysis_analysis		 [fillcolor=lightgrey,
+			label=analysis,
+			shape=folder,
+			style=filled];
+		cameo_flux_analysis -- cameo_flux_analysis_analysis;
+		cameo_flux_analysis_fba		 [label=fba,
+			shape=plaintext];
+		cameo_flux_analysis -- cameo_flux_analysis_fba;
+		cameo_flux_analysis_find_blocked_reactions		 [label=find_blocked_reactions,
+			shape=plaintext];
+		cameo_flux_analysis -- cameo_flux_analysis_find_blocked_reactions;
+		cameo_flux_analysis_flux_balance_impact_degree		 [label=flux_balance_impact_degree,
+			shape=plaintext];
+		cameo_flux_analysis -- cameo_flux_analysis_flux_balance_impact_degree;
+		cameo_flux_analysis_flux_variability_analysis		 [label=flux_variability_analysis,
+			shape=plaintext];
+		cameo_flux_analysis -- cameo_flux_analysis_flux_variability_analysis;
+		cameo_flux_analysis_lmoma		 [label=lmoma,
+			shape=plaintext];
+		cameo_flux_analysis -- cameo_flux_analysis_lmoma;
+		cameo_flux_analysis_moma		 [label=moma,
+			shape=plaintext];
+		cameo_flux_analysis -- cameo_flux_analysis_moma;
+		cameo_flux_analysis_pfba		 [label=pfba,
+			shape=plaintext];
+		cameo_flux_analysis -- cameo_flux_analysis_pfba;
+		cameo_flux_analysis_phenotypic_phase_plane		 [label=phenotypic_phase_plane,
+			shape=plaintext];
+		cameo_flux_analysis -- cameo_flux_analysis_phenotypic_phase_plane;
+		cameo_flux_analysis_remove_infeasible_cycles		 [label=remove_infeasible_cycles,
+			shape=plaintext];
+		cameo_flux_analysis -- cameo_flux_analysis_remove_infeasible_cycles;
+		cameo_flux_analysis_room		 [label=room,
+			shape=plaintext];
+		cameo_flux_analysis -- cameo_flux_analysis_room;
+		cameo_flux_analysis_simulation		 [fillcolor=lightgrey,
+			label=simulation,
+			shape=folder,
+			style=filled];
+		cameo_flux_analysis -- cameo_flux_analysis_simulation;
+		cameo_flux_analysis_util		 [fillcolor=lightgrey,
+			label=util,
+			shape=folder,
+			style=filled];
+		cameo_flux_analysis -- cameo_flux_analysis_util;
+		cameo_ui_HTML		 [label=HTML,
+			shape=note];
+		cameo_ui -- cameo_ui_HTML;
+		cameo_ui_Javascript		 [label=Javascript,
+			shape=note];
+		cameo_ui -- cameo_ui_Javascript;
+		cameo_ui_b64encode		 [label=b64encode,
+			shape=plaintext];
+		cameo_ui -- cameo_ui_b64encode;
+		cameo_ui_bold		 [label=bold,
+			shape=plaintext];
+		cameo_ui -- cameo_ui_bold;
+		cameo_ui_delta		 [label=delta,
+			shape=plaintext];
+		cameo_ui -- cameo_ui_delta;
+		cameo_ui_display		 [label=display,
+			shape=plaintext];
+		cameo_ui -- cameo_ui_display;
+		cameo_ui_downreg		 [label=downreg,
+			shape=plaintext];
+		cameo_ui -- cameo_ui_downreg;
+		cameo_ui_knockin		 [label=knockin,
+			shape=plaintext];
+		cameo_ui -- cameo_ui_knockin;
+		cameo_ui_loading		 [label=loading,
+			shape=plaintext];
+		cameo_ui -- cameo_ui_loading;
+		cameo_ui_logging		 [fillcolor=lightgrey,
+			label=logging,
+			shape=folder,
+			style=filled];
+		cameo_ui -- cameo_ui_logging;
+		cameo_ui_notice		 [label=notice,
+			shape=plaintext];
+		cameo_ui -- cameo_ui_notice;
+		cameo_ui_os		 [fillcolor=lightgrey,
+			label=os,
+			shape=folder,
+			style=filled];
+		cameo_ui -- cameo_ui_os;
+		cameo_ui_searching		 [label=searching,
+			shape=plaintext];
+		cameo_ui -- cameo_ui_searching;
+		cameo_ui_six		 [fillcolor=lightgrey,
+			label=six,
+			shape=folder,
+			style=filled];
+		cameo_ui -- cameo_ui_six;
+		cameo_ui_stop_loader		 [label=stop_loader,
+			shape=plaintext];
+		cameo_ui -- cameo_ui_stop_loader;
+		cameo_ui_upreg		 [label=upreg,
+			shape=plaintext];
+		cameo_ui -- cameo_ui_upreg;
+		cameo_ui_util		 [fillcolor=lightgrey,
+			label=util,
+			shape=folder,
+			style=filled];
+		cameo_ui -- cameo_ui_util;
+		cameo_ui_uuid4		 [label=uuid4,
+			shape=plaintext];
+		cameo_ui -- cameo_ui_uuid4;
+		cameo_strain_design_heuristic_evolutionary_CofactorSwapOptimization		 [label=CofactorSwapOptimization,
+			shape=note];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_CofactorSwapOptimization;
+		cameo_strain_design_heuristic_evolutionary_GeneKnockoutOptimization		 [label=GeneKnockoutOptimization,
+			shape=note];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_GeneKnockoutOptimization;
+		cameo_strain_design_heuristic_evolutionary_ReactionKnockoutOptimization		 [label=ReactionKnockoutOptimization,
+			shape=note];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_ReactionKnockoutOptimization;
+		cameo_strain_design_heuristic_evolutionary_archives		 [fillcolor=lightgrey,
+			label=archives,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_archives;
+		cameo_strain_design_heuristic_evolutionary_decoders		 [fillcolor=lightgrey,
+			label=decoders,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_decoders;
+		cameo_strain_design_heuristic_evolutionary_generators		 [fillcolor=lightgrey,
+			label=generators,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_generators;
+		cameo_strain_design_heuristic_evolutionary_genomes		 [fillcolor=lightgrey,
+			label=genomes,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_genomes;
+		cameo_strain_design_heuristic_evolutionary_objective_functions		 [fillcolor=lightgrey,
+			label=objective_functions,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_objective_functions;
+		cameo_strain_design_heuristic_evolutionary_observers		 [fillcolor=lightgrey,
+			label=observers,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_observers;
+		cameo_strain_design_heuristic_evolutionary_optimization		 [fillcolor=lightgrey,
+			label=optimization,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_optimization;
+		cameo_strain_design_heuristic_evolutionary_plotters		 [fillcolor=lightgrey,
+			label=plotters,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_plotters;
+		cameo_strain_design_heuristic_evolutionary_processing		 [fillcolor=lightgrey,
+			label=processing,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_processing;
+		cameo_strain_design_heuristic_evolutionary_stats		 [fillcolor=lightgrey,
+			label=stats,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_stats;
+		cameo_strain_design_heuristic_evolutionary_variators		 [fillcolor=lightgrey,
+			label=variators,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_variators;
+		cameo_strain_design_heuristic_evolutionary_multiprocess		 [fillcolor=lightgrey,
+			label=multiprocess,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary -- cameo_strain_design_heuristic_evolutionary_multiprocess;
+		cameo_strain_design_heuristic_evolutionary_multiprocess_MultiprocessGeneKnockoutOptimization		 [label=MultiprocessGeneKnockoutOptimization,
+			shape=note];
+		cameo_strain_design_heuristic_evolutionary_multiprocess -- cameo_strain_design_heuristic_evolutionary_multiprocess_MultiprocessGeneKnockoutOptimization;
+		cameo_strain_design_heuristic_evolutionary_multiprocess_MultiprocessReactionKnockoutOptimization		 [label=MultiprocessReactionKnockoutOptimization,
+			shape=note];
+		cameo_strain_design_heuristic_evolutionary_multiprocess -- cameo_strain_design_heuristic_evolutionary_multiprocess_MultiprocessReactionKnockoutOptimization;
+		cameo_strain_design_heuristic_evolutionary_multiprocess_migrators		 [fillcolor=lightgrey,
+			label=migrators,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary_multiprocess -- cameo_strain_design_heuristic_evolutionary_multiprocess_migrators;
+		cameo_strain_design_heuristic_evolutionary_multiprocess_observers		 [fillcolor=lightgrey,
+			label=observers,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary_multiprocess -- cameo_strain_design_heuristic_evolutionary_multiprocess_observers;
+		cameo_strain_design_heuristic_evolutionary_multiprocess_optimization		 [fillcolor=lightgrey,
+			label=optimization,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary_multiprocess -- cameo_strain_design_heuristic_evolutionary_multiprocess_optimization;
+		cameo_strain_design_heuristic_evolutionary_multiprocess_plotters		 [fillcolor=lightgrey,
+			label=plotters,
+			shape=folder,
+			style=filled];
+		cameo_strain_design_heuristic_evolutionary_multiprocess -- cameo_strain_design_heuristic_evolutionary_multiprocess_plotters;
+	}
+	subgraph cluster_cobra {
+		graph [color=black,
+			label=cobra
+		];
+		cobra		 [fillcolor=lightgrey,
+			label=cobra,
+			shape=folder,
+			style=filled];
+		cobra_topology		 [fillcolor=lightgrey,
+			label=topology,
+			shape=folder,
+			style=filled];
+		cobra -- cobra_topology;
+		cobra_io		 [fillcolor=lightgrey,
+			label=io,
+			shape=folder,
+			style=filled];
+		cobra -- cobra_io;
+		cobra_test		 [fillcolor=lightgrey,
+			label=test,
+			shape=folder,
+			style=filled];
+		cobra -- cobra_test;
+		cobra_design		 [fillcolor=lightgrey,
+			label=design,
+			shape=folder,
+			style=filled];
+		cobra -- cobra_design;
+		cobra_core		 [fillcolor=lightgrey,
+			label=core,
+			shape=folder,
+			style=filled];
+		cobra -- cobra_core;
+		cobra_manipulation		 [fillcolor=lightgrey,
+			label=manipulation,
+			shape=folder,
+			style=filled];
+		cobra -- cobra_manipulation;
+		cobra_flux_analysis		 [fillcolor=lightgrey,
+			label=flux_analysis,
+			shape=folder,
+			style=filled];
+		cobra -- cobra_flux_analysis;
+		cobra_solvers		 [fillcolor=lightgrey,
+			label=solvers,
+			shape=folder,
+			style=filled];
+		cobra -- cobra_solvers;
+		cobra_topology_identify_reporter_metabolites		 [label=identify_reporter_metabolites,
+			shape=plaintext];
+		cobra_topology -- cobra_topology_identify_reporter_metabolites;
+		cobra_topology_iteritems		 [label=iteritems,
+			shape=plaintext];
+		cobra_topology -- cobra_topology_iteritems;
+		cobra_topology_mean		 [label=mean,
+			shape=plaintext];
+		cobra_topology -- cobra_topology_mean;
+		cobra_topology_reporter_metabolites		 [fillcolor=lightgrey,
+			label=reporter_metabolites,
+			shape=folder,
+			style=filled];
+		cobra_topology -- cobra_topology_reporter_metabolites;
+		cobra_topology_std		 [label=std,
+			shape=plaintext];
+		cobra_topology -- cobra_topology_std;
+		cobra_io_json		 [fillcolor=lightgrey,
+			label=json,
+			shape=folder,
+			style=filled];
+		cobra_io -- cobra_io_json;
+		cobra_io_load_json_model		 [label=load_json_model,
+			shape=plaintext];
+		cobra_io -- cobra_io_load_json_model;
+		cobra_io_load_matlab_model		 [label=load_matlab_model,
+			shape=plaintext];
+		cobra_io -- cobra_io_load_matlab_model;
+		cobra_io_mat		 [fillcolor=lightgrey,
+			label=mat,
+			shape=folder,
+			style=filled];
+		cobra_io -- cobra_io_mat;
+		cobra_io_read_sbml_model		 [label=read_sbml_model,
+			shape=plaintext];
+		cobra_io -- cobra_io_read_sbml_model;
+		cobra_io_save_json_model		 [label=save_json_model,
+			shape=plaintext];
+		cobra_io -- cobra_io_save_json_model;
+		cobra_io_save_matlab_model		 [label=save_matlab_model,
+			shape=plaintext];
+		cobra_io -- cobra_io_save_matlab_model;
+		cobra_io_sbml3		 [fillcolor=lightgrey,
+			label=sbml3,
+			shape=folder,
+			style=filled];
+		cobra_io -- cobra_io_sbml3;
+		cobra_io_to_json		 [label=to_json,
+			shape=plaintext];
+		cobra_io -- cobra_io_to_json;
+		cobra_io_write_sbml_model		 [label=write_sbml_model,
+			shape=plaintext];
+		cobra_io -- cobra_io_write_sbml_model;
+		cobra_test_abspath		 [label=abspath,
+			shape=plaintext];
+		cobra_test -- cobra_test_abspath;
+		cobra_test_create_test_model		 [label=create_test_model,
+			shape=plaintext];
+		cobra_test -- cobra_test_create_test_model;
+		cobra_test_dirname		 [label=dirname,
+			shape=plaintext];
+		cobra_test -- cobra_test_dirname;
+		cobra_test_join		 [label=join,
+			shape=plaintext];
+		cobra_test -- cobra_test_join;
+		cobra_test_read_sbml_model		 [label=read_sbml_model,
+			shape=plaintext];
+		cobra_test -- cobra_test_read_sbml_model;
+		cobra_test_test_all		 [label=test_all,
+			shape=plaintext];
+		cobra_test -- cobra_test_test_all;
+		cobra_design_Metabolite		 [label=Metabolite,
+			shape=note];
+		cobra_design -- cobra_design_Metabolite;
+		cobra_design_Model		 [label=Model,
+			shape=note];
+		cobra_design -- cobra_design_Model;
+		cobra_design_Reaction		 [label=Reaction,
+			shape=note];
+		cobra_design -- cobra_design_Reaction;
+		cobra_design_canonical_form		 [label=canonical_form,
+			shape=plaintext];
+		cobra_design -- cobra_design_canonical_form;
+		cobra_design_deepcopy		 [label=deepcopy,
+			shape=plaintext];
+		cobra_design -- cobra_design_deepcopy;
+		cobra_design_design_algorithms		 [fillcolor=lightgrey,
+			label=design_algorithms,
+			shape=folder,
+			style=filled];
+		cobra_design -- cobra_design_design_algorithms;
+		cobra_design_dual_problem		 [label=dual_problem,
+			shape=plaintext];
+		cobra_design -- cobra_design_dual_problem;
+		cobra_design_iteritems		 [label=iteritems,
+			shape=plaintext];
+		cobra_design -- cobra_design_iteritems;
+		cobra_design_run_optknock		 [label=run_optknock,
+			shape=plaintext];
+		cobra_design -- cobra_design_run_optknock;
+		cobra_design_set_up_optknock		 [label=set_up_optknock,
+			shape=plaintext];
+		cobra_design -- cobra_design_set_up_optknock;
+		cobra_core_ArrayBasedModel		 [label=ArrayBasedModel,
+			shape=note];
+		cobra_core -- cobra_core_ArrayBasedModel;
+		cobra_core_DictList		 [label=DictList,
+			shape=note];
+		cobra_core -- cobra_core_DictList;
+		cobra_core_Gene		 [label=Gene,
+			shape=note];
+		cobra_core -- cobra_core_Gene;
+		cobra_core_Metabolite		 [label=Metabolite,
+			shape=note];
+		cobra_core -- cobra_core_Metabolite;
+		cobra_core_Model		 [label=Model,
+			shape=note];
+		cobra_core -- cobra_core_Model;
+		cobra_core_Object		 [label=Object,
+			shape=note];
+		cobra_core -- cobra_core_Object;
+		cobra_core_Reaction		 [label=Reaction,
+			shape=note];
+		cobra_core -- cobra_core_Reaction;
+		cobra_core_Solution		 [label=Solution,
+			shape=note];
+		cobra_core -- cobra_core_Solution;
+		cobra_core_Species		 [label=Species,
+			shape=note];
+		cobra_core -- cobra_core_Species;
+		cobra_manipulation_add_SBO		 [label=add_SBO,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_add_SBO;
+		cobra_manipulation_annotate		 [fillcolor=lightgrey,
+			label=annotate,
+			shape=folder,
+			style=filled];
+		cobra_manipulation -- cobra_manipulation_annotate;
+		cobra_manipulation_canonical_form		 [label=canonical_form,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_canonical_form;
+		cobra_manipulation_check_mass_balance		 [label=check_mass_balance,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_check_mass_balance;
+		cobra_manipulation_check_metabolite_compartment_formula		 [label=check_metabolite_compartment_formula,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_check_metabolite_compartment_formula;
+		cobra_manipulation_check_reaction_bounds		 [label=check_reaction_bounds,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_check_reaction_bounds;
+		cobra_manipulation_convert_to_irreversible		 [label=convert_to_irreversible,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_convert_to_irreversible;
+		cobra_manipulation_delete		 [fillcolor=lightgrey,
+			label=delete,
+			shape=folder,
+			style=filled];
+		cobra_manipulation -- cobra_manipulation_delete;
+		cobra_manipulation_delete_model_genes		 [label=delete_model_genes,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_delete_model_genes;
+		cobra_manipulation_escape_ID		 [label=escape_ID,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_escape_ID;
+		cobra_manipulation_find_gene_knockout_reactions		 [label=find_gene_knockout_reactions,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_find_gene_knockout_reactions;
+		cobra_manipulation_get_compiled_gene_reaction_rules		 [label=get_compiled_gene_reaction_rules,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_get_compiled_gene_reaction_rules;
+		cobra_manipulation_initialize_growth_medium		 [label=initialize_growth_medium,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_initialize_growth_medium;
+		cobra_manipulation_modify		 [fillcolor=lightgrey,
+			label=modify,
+			shape=folder,
+			style=filled];
+		cobra_manipulation -- cobra_manipulation_modify;
+		cobra_manipulation_remove_genes		 [label=remove_genes,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_remove_genes;
+		cobra_manipulation_revert_to_reversible		 [label=revert_to_reversible,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_revert_to_reversible;
+		cobra_manipulation_undelete_model_genes		 [label=undelete_model_genes,
+			shape=plaintext];
+		cobra_manipulation -- cobra_manipulation_undelete_model_genes;
+		cobra_manipulation_validate		 [fillcolor=lightgrey,
+			label=validate,
+			shape=folder,
+			style=filled];
+		cobra_manipulation -- cobra_manipulation_validate;
+		cobra_flux_analysis_assess_medium_component_essentiality		 [label=assess_medium_component_essentiality,
+			shape=plaintext];
+		cobra_flux_analysis -- cobra_flux_analysis_assess_medium_component_essentiality;
+		cobra_flux_analysis_calculate_phenotype_phase_plane		 [label=calculate_phenotype_phase_plane,
+			shape=plaintext];
+		cobra_flux_analysis -- cobra_flux_analysis_calculate_phenotype_phase_plane;
+		cobra_flux_analysis_construct_loopless_model		 [label=construct_loopless_model,
+			shape=plaintext];
+		cobra_flux_analysis -- cobra_flux_analysis_construct_loopless_model;
+		cobra_flux_analysis_deletion_worker		 [fillcolor=lightgrey,
+			label=deletion_worker,
+			shape=folder,
+			style=filled];
+		cobra_flux_analysis -- cobra_flux_analysis_deletion_worker;
+		cobra_flux_analysis_double_deletion		 [fillcolor=lightgrey,
+			label=double_deletion,
+			shape=folder,
+			style=filled];
+		cobra_flux_analysis -- cobra_flux_analysis_double_deletion;
+		cobra_flux_analysis_double_gene_deletion		 [label=double_gene_deletion,
+			shape=plaintext];
+		cobra_flux_analysis -- cobra_flux_analysis_double_gene_deletion;
+		cobra_flux_analysis_double_reaction_deletion		 [label=double_reaction_deletion,
+			shape=plaintext];
+		cobra_flux_analysis -- cobra_flux_analysis_double_reaction_deletion;
+		cobra_flux_analysis_essentiality		 [fillcolor=lightgrey,
+			label=essentiality,
+			shape=folder,
+			style=filled];
+		cobra_flux_analysis -- cobra_flux_analysis_essentiality;
+		cobra_flux_analysis_find_blocked_reactions		 [label=find_blocked_reactions,
+			shape=plaintext];
+		cobra_flux_analysis -- cobra_flux_analysis_find_blocked_reactions;
+		cobra_flux_analysis_flux_variability_analysis		 [label=flux_variability_analysis,
+			shape=plaintext];
+		cobra_flux_analysis -- cobra_flux_analysis_flux_variability_analysis;
+		cobra_flux_analysis_gapfilling		 [fillcolor=lightgrey,
+			label=gapfilling,
+			shape=folder,
+			style=filled];
+		cobra_flux_analysis -- cobra_flux_analysis_gapfilling;
+		cobra_flux_analysis_growMatch		 [label=growMatch,
+			shape=plaintext];
+		cobra_flux_analysis -- cobra_flux_analysis_growMatch;
+		cobra_flux_analysis_loopless		 [fillcolor=lightgrey,
+			label=loopless,
+			shape=folder,
+			style=filled];
+		cobra_flux_analysis -- cobra_flux_analysis_loopless;
+		cobra_flux_analysis_moma		 [fillcolor=lightgrey,
+			label=moma,
+			shape=folder,
+			style=filled];
+		cobra_flux_analysis -- cobra_flux_analysis_moma;
+		cobra_flux_analysis_optimize_minimal_flux		 [label=optimize_minimal_flux,
+			shape=plaintext];
+		cobra_flux_analysis -- cobra_flux_analysis_optimize_minimal_flux;
+		cobra_flux_analysis_parsimonious		 [fillcolor=lightgrey,
+			label=parsimonious,
+			shape=folder,
+			style=filled];
+		cobra_flux_analysis -- cobra_flux_analysis_parsimonious;
+		cobra_flux_analysis_phenotype_phase_plane		 [fillcolor=lightgrey,
+			label=phenotype_phase_plane,
+			shape=folder,
+			style=filled];
+		cobra_flux_analysis -- cobra_flux_analysis_phenotype_phase_plane;
+		cobra_flux_analysis_single_deletion		 [fillcolor=lightgrey,
+			label=single_deletion,
+			shape=folder,
+			style=filled];
+		cobra_flux_analysis -- cobra_flux_analysis_single_deletion;
+		cobra_flux_analysis_single_gene_deletion		 [label=single_gene_deletion,
+			shape=plaintext];
+		cobra_flux_analysis -- cobra_flux_analysis_single_gene_deletion;
+		cobra_flux_analysis_single_reaction_deletion		 [label=single_reaction_deletion,
+			shape=plaintext];
+		cobra_flux_analysis -- cobra_flux_analysis_single_reaction_deletion;
+		cobra_flux_analysis_variability		 [fillcolor=lightgrey,
+			label=variability,
+			shape=folder,
+			style=filled];
+		cobra_flux_analysis -- cobra_flux_analysis_variability;
+		cobra_solvers_SolverNotFound		 [label=SolverNotFound,
+			shape=note];
+		cobra_solvers -- cobra_solvers_SolverNotFound;
+		cobra_solvers_add_solver		 [label=add_solver,
+			shape=plaintext];
+		cobra_solvers -- cobra_solvers_add_solver;
+		cobra_solvers_get_solver_name		 [label=get_solver_name,
+			shape=plaintext];
+		cobra_solvers -- cobra_solvers_get_solver_name;
+		cobra_solvers_optimize		 [label=optimize,
+			shape=plaintext];
+		cobra_solvers -- cobra_solvers_optimize;
+		cobra_solvers_parameters		 [fillcolor=lightgrey,
+			label=parameters,
+			shape=folder,
+			style=filled];
+		cobra_solvers -- cobra_solvers_parameters;
+	}
+}
