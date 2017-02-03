@@ -1,6 +1,6 @@
 # Visualize Package Hierarchies with Graphviz
 
-The main function `graph_package_hierarchy` in the Jupyter notebook build a graphviz
+The main function `graph_package_hierarchy` in the Jupyter notebook builds a graphviz
 subgraph of a package hierarchy and its contained modules, classes, and
 functions.
 
