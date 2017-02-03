@@ -500,6 +500,11 @@ strict graph "Merge Overview" {
 			shape=folder,
 			style=filled];
 		cobra -- cobra_topology;
+		cobra_util		 [fillcolor=lightgrey,
+			label=util,
+			shape=folder,
+			style=filled];
+		cobra -- cobra_util;
 		cobra_io		 [fillcolor=lightgrey,
 			label=io,
 			shape=folder,
@@ -552,6 +557,98 @@ strict graph "Merge Overview" {
 		cobra_topology_std		 [label=std,
 			shape=plaintext];
 		cobra_topology -- cobra_topology_std;
+		cobra_util_AutoVivification		 [label=AutoVivification,
+			shape=note];
+		cobra_util -- cobra_util_AutoVivification;
+		cobra_util_Frozendict		 [label=Frozendict,
+			shape=note];
+		cobra_util -- cobra_util_Frozendict;
+		cobra_util_HistoryManager		 [label=HistoryManager,
+			shape=note];
+		cobra_util -- cobra_util_HistoryManager;
+		cobra_util_SolverNotFound		 [label=SolverNotFound,
+			shape=note];
+		cobra_util -- cobra_util_SolverNotFound;
+		cobra_util_add_absolute_expression		 [label=add_absolute_expression,
+			shape=plaintext];
+		cobra_util -- cobra_util_add_absolute_expression;
+		cobra_util_add_to_solver		 [label=add_to_solver,
+			shape=plaintext];
+		cobra_util -- cobra_util_add_to_solver;
+		cobra_util_array		 [fillcolor=lightgrey,
+			label=array,
+			shape=folder,
+			style=filled];
+		cobra_util -- cobra_util_array;
+		cobra_util_context		 [fillcolor=lightgrey,
+			label=context,
+			shape=folder,
+			style=filled];
+		cobra_util -- cobra_util_context;
+		cobra_util_create_stoichiometric_array		 [label=create_stoichiometric_array,
+			shape=plaintext];
+		cobra_util -- cobra_util_create_stoichiometric_array;
+		cobra_util_get_context		 [label=get_context,
+			shape=plaintext];
+		cobra_util -- cobra_util_get_context;
+		cobra_util_get_solver_name		 [label=get_solver_name,
+			shape=plaintext];
+		cobra_util -- cobra_util_get_solver_name;
+		cobra_util_interface_to_str		 [label=interface_to_str,
+			shape=plaintext];
+		cobra_util -- cobra_util_interface_to_str;
+		cobra_util_iteritems		 [label=iteritems,
+			shape=plaintext];
+		cobra_util -- cobra_util_iteritems;
+		cobra_util_logging		 [fillcolor=lightgrey,
+			label=logging,
+			shape=folder,
+			style=filled];
+		cobra_util -- cobra_util_logging;
+		cobra_util_np		 [fillcolor=lightgrey,
+			label=np,
+			shape=folder,
+			style=filled];
+		cobra_util -- cobra_util_np;
+		cobra_util_numpy		 [fillcolor=lightgrey,
+			label=numpy,
+			shape=folder,
+			style=filled];
+		cobra_util -- cobra_util_numpy;
+		cobra_util_optlang		 [fillcolor=lightgrey,
+			label=optlang,
+			shape=folder,
+			style=filled];
+		cobra_util -- cobra_util_optlang;
+		cobra_util_partial		 [label=partial,
+			shape=note];
+		cobra_util -- cobra_util_partial;
+		cobra_util_re		 [fillcolor=lightgrey,
+			label=re,
+			shape=folder,
+			style=filled];
+		cobra_util -- cobra_util_re;
+		cobra_util_remove_from_solver		 [label=remove_from_solver,
+			shape=plaintext];
+		cobra_util -- cobra_util_remove_from_solver;
+		cobra_util_resettable		 [label=resettable,
+			shape=plaintext];
+		cobra_util -- cobra_util_resettable;
+		cobra_util_scipy		 [fillcolor=lightgrey,
+			label=scipy,
+			shape=folder,
+			style=filled];
+		cobra_util -- cobra_util_scipy;
+		cobra_util_solver		 [fillcolor=lightgrey,
+			label=solver,
+			shape=folder,
+			style=filled];
+		cobra_util -- cobra_util_solver;
+		cobra_util_util		 [fillcolor=lightgrey,
+			label=util,
+			shape=folder,
+			style=filled];
+		cobra_util -- cobra_util_util;
 		cobra_io_json		 [fillcolor=lightgrey,
 			label=json,
 			shape=folder,
@@ -638,15 +735,15 @@ strict graph "Merge Overview" {
 		cobra_design_set_up_optknock		 [label=set_up_optknock,
 			shape=plaintext];
 		cobra_design -- cobra_design_set_up_optknock;
-		cobra_core_ArrayBasedModel		 [label=ArrayBasedModel,
-			shape=note];
-		cobra_core -- cobra_core_ArrayBasedModel;
 		cobra_core_DictList		 [label=DictList,
 			shape=note];
 		cobra_core -- cobra_core_DictList;
 		cobra_core_Gene		 [label=Gene,
 			shape=note];
 		cobra_core -- cobra_core_Gene;
+		cobra_core_LazySolution		 [label=LazySolution,
+			shape=note];
+		cobra_core -- cobra_core_LazySolution;
 		cobra_core_Metabolite		 [label=Metabolite,
 			shape=note];
 		cobra_core -- cobra_core_Metabolite;
@@ -794,6 +891,14 @@ strict graph "Merge Overview" {
 			shape=folder,
 			style=filled];
 		cobra_flux_analysis -- cobra_flux_analysis_phenotype_phase_plane;
+		cobra_flux_analysis_sample		 [label=sample,
+			shape=plaintext];
+		cobra_flux_analysis -- cobra_flux_analysis_sample;
+		cobra_flux_analysis_sampling		 [fillcolor=lightgrey,
+			label=sampling,
+			shape=folder,
+			style=filled];
+		cobra_flux_analysis -- cobra_flux_analysis_sampling;
 		cobra_flux_analysis_single_deletion		 [fillcolor=lightgrey,
 			label=single_deletion,
 			shape=folder,
